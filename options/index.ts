@@ -8,7 +8,7 @@ export const options: OptionsType[] = [
     name: "產品",
   },
   {
-    url: "contract",
+    url: "about",
     name: "關於我們",
   },
   {

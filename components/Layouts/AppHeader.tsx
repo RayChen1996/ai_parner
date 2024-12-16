@@ -11,14 +11,15 @@ export default function AppHeader() {
     <header className="sticky top-0 z-50 mx-auto w-full border-b-2 bg-primary px-6 text-white backdrop-blur-md">
       <nav className="navbar">
         <div className="navbar-start">
-          <a
+          <Link
+            href={"/"}
             className={clsx(
               "btn btn-ghost text-xl font-bold",
               shrik_hand.className,
             )}
           >
             ALPHABOX+
-          </a>
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
