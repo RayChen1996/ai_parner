@@ -4,55 +4,55 @@ export interface OptionsType {
 }
 export const options: OptionsType[] = [
   {
-    url: "",
+    url: "products",
     name: "產品",
   },
   {
-    url: "",
+    url: "contract",
     name: "關於我們",
   },
   {
-    url: "",
+    url: "news",
     name: "最新消息",
   },
   {
-    url: "",
+    url: "faq",
     name: "FAQ",
   },
   {
-    url: "",
+    url: "contract",
     name: "聯絡我們",
   },
 ];
 export const authOptions: OptionsType[] = [
   {
-    url: "",
+    url: "/auth",
     name: "註冊",
   },
   {
-    url: "",
+    url: "/auth",
     name: "登入",
   },
   {
-    url: "",
+    url: "/",
     name: "訂閱",
   },
 ];
 export const footOptions: OptionsType[] = [
   {
-    url: "",
+    url: "/contract",
     name: "關於我們",
   },
   {
-    url: "",
+    url: "/products",
     name: "產品資訊",
   },
   {
-    url: "",
+    url: "/faq",
     name: "常見問題",
   },
   {
-    url: "",
+    url: "/private-policy",
     name: "隱私政策",
   },
 ];
