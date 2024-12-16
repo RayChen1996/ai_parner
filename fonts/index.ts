@@ -5,13 +5,19 @@ import {
   Inter,
   Roboto,
   Shrikhand,
+  Saira_Extra_Condensed,
 } from "next/font/google";
 
 export const inter = Inter({
   subsets: ["latin"],
   display: "swap",
 });
-
+export const saira_extra_condensed = Saira_Extra_Condensed({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-saira-extra-condensed",
+  display: "swap",
+});
 export const noto_sans_tc = Noto_Sans_TC({
   subsets: ["latin"],
   variable: "--font-noto-sans-tc",

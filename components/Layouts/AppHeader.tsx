@@ -4,9 +4,11 @@ import clsx from "clsx";
 import { options, authOptions } from "@/options";
 import Link from "next/link";
 import { Menu } from "lucide-react";
+import scanSvg from "@/public/point_scan.svg";
+import Image from "next/image";
 export default function AppHeader() {
   return (
-    <header className="mx-auto w-full border-b-2 bg-primary px-6 text-white">
+    <header className="sticky top-0 z-50 mx-auto w-full border-b-2 bg-primary px-6 text-white backdrop-blur-md">
       <nav className="navbar">
         <div className="navbar-start">
           <a
@@ -31,11 +33,12 @@ export default function AppHeader() {
           <button className="btn lg:hidden">
             <Menu size={20} />
           </button>
-          <ul className="hidden items-center gap-2 lg:flex">
+          <ul className="hidden items-center gap-2 lg:flex lg:gap-6">
             {authOptions.map((item, _) => {
               if (item.name === "訂閱") {
                 return (
                   <Link href={item?.url || ""} key={item.name} className="btn">
+                    <Image alt="" src={scanSvg} />
                     {item.name}
                   </Link>
                 );
