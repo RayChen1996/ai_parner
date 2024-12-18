@@ -47,7 +47,7 @@ type Card = {
 };
 function Card({ text, description, name, type }: Card) {
   return (
-    <div className="flex flex-col items-center justify-center border-x bg-black text-white">
+    <div className="flex cursor-pointer flex-col items-center justify-center border-x bg-black text-white hover:bg-black/80">
       <span
         className={clsx(
           saira_extra_condensed.className,
@@ -56,7 +56,7 @@ function Card({ text, description, name, type }: Card) {
       >
         {text}
       </span>
-      <span className={clsx("", shrik_hand.className)}>{name}</span>
+      <span className={clsx(shrik_hand.className)}>{name}</span>
       <div className="flex">
         <div>
           <div>{type}</div>
