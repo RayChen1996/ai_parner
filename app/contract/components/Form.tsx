@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import png from "@/public/homeblock2.jpg";
 import { noto_sans_tc } from "@/fonts";
+import DecoSvg from "@/components/svg/deco";
 import clsx from "clsx";
 export default function Form() {
   return (
@@ -41,6 +42,10 @@ export default function Form() {
               className="textarea textarea-bordered"
               placeholder="COMMENTS"
             ></textarea>
+            <button type="submit" className="btn btn-primary">
+              <DecoSvg />
+              送出
+            </button>
           </div>
         </form>
         <aside>
